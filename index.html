@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <img src="assets/img/drake-nonstop.png" alt="background-image" id="back-img">
+        <audio src="assets/audio/drake - nonstop.mp3" controls id="song"></audio>
+        <div class="audio-player">
+            <img src="assets/img/drake-nonstop.png" alt="Song name" id="song-img">
+
+            <div class="content">
+                <div class="singer">Drake</div>
+
+                <div class="song">Nonstop</div>
+
+                <div class="time-container">
+                    <div class="current-time">0:00</div>
+                    <input type="range" id="progress-bar" value="0" max="100">
+                    <div class="full-time">1:00</div>
+                </div>
+
+                <div class="audio-controls">
+                    <img src="assets/svg/prev-arrow.png" alt="PREV" id="prev-arrow">
+                    <img src="assets/svg/pause.png" alt="PAUSE" id="control-pause" class="inactive">
+                    <img src="assets/svg/play.png" alt="PLAY" id="control-play" class="active">
+                    <img src="assets/svg/next-arrow.png" alt="NEXT" id="next-arrow">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-description">
+            <div class="footer-text">
+                <div class="footer-year">2024</div>
+                <div class="footer-git">
+                    <a href="https://github.com/pashabbrv">
+                        <img src="assets/svg/git.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <a href="https://rs.school/courses/javascript-ru">
+                    <img src="assets/svg/rs.png" alt="RS School logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
